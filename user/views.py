@@ -71,7 +71,6 @@ def userLogin(request):
 
 def userLogout(request):
     logout(request)
-    print("Çıkış yapıldı")
     messages.success(request, 'Çıkış Yapıldı')
     return redirect('index')
 
